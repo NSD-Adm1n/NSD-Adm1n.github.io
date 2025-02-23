@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Main</title>
+    <title>Placeholder</title>
     <style>
         * {
             margin: 0;
@@ -13,6 +13,7 @@
         body {
             background-color: black;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             height: 100vh;
@@ -21,12 +22,30 @@
         }
         img {
             max-width: 90vw; /* 90% of viewport width */
-            max-height: 90vh; /* 90% of viewport height */
+            max-height: 70vh; /* Adjusted for landscape */
             object-fit: contain; /* Ensures it scales correctly */
+        }
+        .text-container {
+            color: white;
+            text-align: center;
+            margin-top: 20px;
+            font-family: Arial, sans-serif;
+        }
+        .text-container p {
+            margin: 5px 0;
+            font-size: 1.2em;
+        }
+        .text-container a {
+            color: white;
+            text-decoration: none;
         }
     </style>
 </head>
 <body>
-    <img src="logo.png" alt="Logo">
+    <img src="logo.jpeg" alt="Logo">
+    <div class="text-container">
+        <p>We make video games</p>
+        <p>Email: <a href="mailto:admin@neversaydiestudios.com">admin@neversaydiestudios.com</a></p>
+    </div>
 </body>
 </html>
